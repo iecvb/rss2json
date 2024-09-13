@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expõe a porta 5000 para o contêiner
-EXPOSE 8080
+#EXPOSE 8080
 
 # Comando para rodar a aplicação Flask
 CMD ["python", "rss2json.py"]
