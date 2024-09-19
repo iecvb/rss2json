@@ -1,4 +1,6 @@
 // api/podcast.js
+const { DOMParser } = require("xmldom");
+
 const url = "https://anchor.fm/s/49f0c604/podcast/rss";
 
 async function fetchPodcastData(url) {
