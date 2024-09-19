@@ -1,5 +1,5 @@
 // api/podcast.js
-const { DOMParser } = require("xmldom");
+import { DOMParser } from "xmldom";
 
 const url = "https://anchor.fm/s/49f0c604/podcast/rss";
 
