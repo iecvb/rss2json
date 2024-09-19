@@ -1,0 +1,7 @@
+{
+  "name": "rss2json",
+  "version": "1.0.0",
+  "dependencies": {
+    "xmldom": "^0.7.0"
+  }
+}
