@@ -23,11 +23,8 @@ function parsePodcastData(xmlText) {
     const url =
       item.getElementsByTagName("enclosure")[0]?.getAttribute("url") ||
       "URL indisponível";
-    const cover_art_url =
-      item.getElementsByTagName("itunes:image")[0]?.getAttribute("href") ||
-      "Imagem indisponível";
 
-    return { name, url, cover_art_url };
+    return { name, url };
   });
 }
 
