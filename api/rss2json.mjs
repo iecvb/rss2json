@@ -20,9 +20,6 @@ function parsePodcastData(xmlText) {
     const name =
       item.getElementsByTagName("title")[0]?.textContent ||
       "Título indisponível";
-    const artist = "Radio 24hB <br> 24 horas de Estudos Bíblicos";
-    const album =
-      "Igreja Evangelica Congregacional Vale da Benção em Candeias, Jaboatão, Pernambuco, Brasil";
     const url =
       item.getElementsByTagName("enclosure")[0]?.getAttribute("url") ||
       "URL indisponível";
@@ -30,7 +27,7 @@ function parsePodcastData(xmlText) {
       item.getElementsByTagName("itunes:image")[0]?.getAttribute("href") ||
       "Imagem indisponível";
 
-    return { name, artist, album, url, cover_art_url };
+    return { name, url, cover_art_url };
   });
 }
 
