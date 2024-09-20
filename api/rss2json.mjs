@@ -44,5 +44,6 @@ async function getPodcastData() {
 
 export default async (req, res) => {
   const podcastData = await getPodcastData();
+  res.setHeader("Access-Control-Allow-Origin", "https://24hb.vercel.app");
   res.status(200).json(podcastData);
 };
